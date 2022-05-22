@@ -36,7 +36,7 @@ class ComposerStaticInit789aa60b5b37ad70053d58aa7e201e8b
         ),
         'E' => 
         array (
-            'Erick\\BuscadorCursos\\' => 21,
+            'Erick\\BuscadorDeCursos\\' => 23,
         ),
     );
 
@@ -78,7 +78,7 @@ class ComposerStaticInit789aa60b5b37ad70053d58aa7e201e8b
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'Erick\\BuscadorCursos\\' => 
+        'Erick\\BuscadorDeCursos\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
