@@ -1,16 +1,17 @@
 <?php
 
 namespace Erick\BuscadorDeCursos;
+
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\DomCrawler\Crawler;
 
-
-class Buscador {
-
+class Buscador
+{
     private $httpClient;
     private $crawler;
 
-    public function __construct(ClientInterface $httpClient, Crawler $crawler){
+    public function __construct(ClientInterface $httpClient, Crawler $crawler)
+    {
         $this -> httpClient = $httpClient;
         $this -> crawler = $crawler;
     }
@@ -23,10 +24,10 @@ class Buscador {
         $elementosCursos = $this -> crawler -> filter('span.card-curso__nome');
         $cursos = [];
 
-        foreach($elementosCursos as $elementoCurso){ 
+        foreach ($elementosCursos as $elementoCurso) {
             array_push($cursos, $elementoCurso -> textContent);
         }
-
+          
         return $cursos;
     }
 }
