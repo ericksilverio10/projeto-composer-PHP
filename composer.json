@@ -1,0 +1,20 @@
+{
+    "name": "erick/buscador-cursos",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Erick\\BuscadorCursos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Erick",
+            "email": "erick1junior@hotmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "symfony/dom-crawler": "^6.0",
+        "symfony/css-selector": "^6.0"
+    }
+}
